@@ -240,29 +240,6 @@ payCard.addEventListener("click", () => {
     serviceNames.push(e.querySelector("span").innerHTML)
   })
 
-  let myReservation = {
-    master: document.querySelector(".profileName").innerHTML,
-    userName,
-    userEmail: document.querySelector(".userEmail").value,
-    // userContact,
-    services: serviceNames,
-    date: dateSelect.textContent,
-    time: timeSelect.textContent,
-  }
-  localStorage.setItem("myReservation", JSON.stringify(myReservation))
-
-
-  document.querySelector(".receiptServices").innerHTML = serviceNames.join(", ")
-  document.querySelector(".userReceipt").innerHTML = userName
-  document.querySelector(".userContactReceipt").innerHTML = userContact
-  document.querySelector(".userMail").innerHTML = userEmail
-  document.querySelector(".receiptMaster").innerHTML = document.querySelector(".profileName").innerHTML
-  document.querySelector(".receiptDate").innerHTML = `📅 ${dateSelect.textContent} 🕐 ${timeSelect.textContent}`
-  let sumEnd = Number(document.querySelector("#sum-price").innerHTML)
-  document.querySelector(".receipTotal").innerHTML = (((sumEnd * 5) / 100) + sumEnd) + " AZN"
-
-
-
   reserveCard.style.display = "none"
   receiptCard.style.display = "flex"
 
