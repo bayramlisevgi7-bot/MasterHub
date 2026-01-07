@@ -1475,49 +1475,6 @@ html {
 }
 
 
-
-
-
-
-.myReservation {
-    background-color: #f0f4ff;
-    padding: 25px 30px;
-    border-radius: 20px;
-    max-width: 500px;
-    margin: 50px auto;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.myReservation h2 {
-    text-align: center;
-    color: #4f46e5;
-    margin-bottom: 20px;
-}
-
-.myReservation p {
-    font-size: 16px;
-    margin: 8px 0;
-    color: #1f2937;
-}
-
-.deleteBtn {
-    display: block;
-    width: 120px;
-    margin: 20px auto 0;
-    padding: 10px 0;
-    background-color: #ef4444;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.deleteBtn:hover {
-    background-color: #b91c1c;
-}
-
 @media (min-width: 360px) and (max-width: 767px) {
     .myReservation {
         padding: 20px;
